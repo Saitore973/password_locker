@@ -58,11 +58,11 @@ def main():
                 default_password = input()
 
                 print('\n')
-        #     else:
-        #         print("login Success")
-        #         print('\n')
-        #         print("-"*10)
-        # elif short_code == 'ex':
-        #     break
-        # else:
-        #     print("Enter valid code to continue")
+            else:
+                print("login Success")
+                print('\n')
+                print("-"*10)
+        elif short_code == 'ex':
+            break
+        else:
+            print("Enter valid code to continue")
