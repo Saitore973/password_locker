@@ -18,4 +18,6 @@ class TestUser(unittest.TestCase):
 
     def test_save_user(self):
         self.save_user()
-        self.assertEqual(len(User.user_list),1)         
+        self.assertEqual(len(User.user_list),1) 
+if __name__ == '__main()':
+    unittest.main()       

@@ -1,4 +1,5 @@
 import random
+import string
 from user import User
 
 def main():
@@ -14,6 +15,10 @@ def main():
             print("create username")
             created_user_name = input()
 
+            print("Want to create password? 'y' or 'n'")
+            yes = input()
+            # if yes:  
+
             print("create password")
             created_password = input()
 
@@ -25,6 +30,9 @@ def main():
                 print("Enter your password")
                 created_password = input()
                 confirm_password = input()
+            # else:
+            #      pass_code = string.ascii_letters
+            #      created_password = "".join(random.choice(pass_code) for i in range(10))     
 
             else:
                 print(f"Congratulations {created_user_name}. Account creation was successful")
@@ -70,3 +78,5 @@ def main():
 
     if __name__ == '__main__':
         main()                 
+
+
