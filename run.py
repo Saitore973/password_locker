@@ -5,7 +5,7 @@ def main():
     while True:
         print("Welcome to password locker")
         print('\n')
-        print("Select a short codes to navigate: to create a new user use 'nn': To login to your account use: 'lg To exit use: 'ex'")
+        print("Select a short codes to navigate: to create a new user use 'nn': To login to your account use: 'lg' To exit use: 'ex'")
         short_code = input().lower()
         print('\n')
 
@@ -40,4 +40,29 @@ def main():
                 print("Password")
                 password_entered = input()
             else:
-              print("log in was successful")
+               print(f"Welcome {user_name_entered}.Login was successful")
+        elif short_code == 'lg':
+            print("welcome")
+            print("Enter user name")
+            default_user_name = input()
+
+            print("enter password")
+            default_password = input()
+            print('\n')
+
+            while default_user_name != 'testuser' or default_password !='67890':
+                print("Wrong user name or password. Username 'testuser' and password '67890' ")
+                print("enter username")
+                default_user_name =input()
+                print("enter password")
+                default_password = input()
+
+                print('\n')
+        #     else:
+        #         print("login Success")
+        #         print('\n')
+        #         print("-"*10)
+        # elif short_code == 'ex':
+        #     break
+        # else:
+        #     print("Enter valid code to continue")
