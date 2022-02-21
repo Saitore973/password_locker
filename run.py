@@ -59,6 +59,7 @@ def main():
             else:
                 print(f"Congratulations {created_user_name}. Account creation was successful")
                 print('\n')
+                 save_User(create_user(created_user_name , create_password))
                 print("Proceed to login ")
                 print("enter your username")
                 user_name_entered = input()
