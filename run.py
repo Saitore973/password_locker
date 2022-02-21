@@ -115,7 +115,7 @@ def main():
             print("Want to delete account? 'y' 'n'")
             yes = input()
             if yes == 'y':
-               del user()
+                del_user()
                 print("Deleted successfully")
             else:
                 print("Account not found") 
