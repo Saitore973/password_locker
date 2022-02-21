@@ -16,7 +16,7 @@ class User:
         '''
         User.user_list.append(self)
 
-    def delete_user(self,account):
+    def delete_user(self):
 
         '''
         A method that save an instance of a user in the user list

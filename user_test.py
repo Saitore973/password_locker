@@ -15,6 +15,9 @@ class TestUser(unittest.TestCase):
     def test_init(self):
         self.assertEqual(self.new_account.user_name, "awadh")
         self.assertEqual(self.new_account.password, "Dreezy@84")
+    def test_delete_user(self):
+        self.delete_user()
+        self.assertEqual(len(User.user_list), 0)    
 
     def test_save_user(self):
         self.save_user()
