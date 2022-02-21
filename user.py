@@ -25,7 +25,7 @@ class User:
         User.user_list.remove(self)
 
     @classmethod
-    def find_by_appName(cls,app_name):
+    def find_user(cls,user_name):
         '''
         Method that takes in a application name and return a string that matches that name
         Args:
@@ -33,6 +33,6 @@ class User:
         Returns :
             matching account username
         '''
-        for login in cls.credentials_list:
-            if login.app_name == app_name:
-                return login
+        for user in cls.user_list:
+            if user.user_name == user_name:
+                return user
