@@ -2,7 +2,7 @@ import random
 import string
 from user import User
 
-def create_user(user_name, password):
+def create_user(user_name,password):
     '''
     function to create a new user
     '''
@@ -41,7 +41,9 @@ def main():
             if yes == "y":          
                 print("create password")
                 created_password = input()
-
+        create_password = "".join(random.choice(pass_code) for i in range(10)) 
+                print("pasword Generated!!!") 
+                continue  
             
                 print("confirm password")
                 confirm_password = input()
