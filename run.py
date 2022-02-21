@@ -2,6 +2,13 @@ import random
 import string
 from user import User
 
+def create_user(user_name, password):
+    '''
+    function to create a new user
+    '''
+    new_user = User(user_name, password)
+    return new_user
+
 def display_user():
     '''
     Function that returns all the saved contacts
@@ -12,6 +19,9 @@ def del_user(account):
     Function to delete a contact
     '''
     account.delete_user()
+
+def save_User(user):
+    return User.save_user()
 
 def main():
     while True:
