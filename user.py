@@ -25,7 +25,7 @@ class User:
         User.user_list.remove(self)
 
     @classmethod
-     def find_user(cls):
+    def find_user(cls):
         '''
         Method that takes in a application name and return a string that matches that name
         Args:
