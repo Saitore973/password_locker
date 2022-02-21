@@ -13,6 +13,7 @@ This project is a python application that manages login and signup credentials o
 ## Screenshot
 
 <img src="images/first.png" width="900px" height="440px">
+<img src="images/second.png" width="900px" height="440px">
 
 ## User Stories
 The user would like to.... :
